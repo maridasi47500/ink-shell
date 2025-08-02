@@ -4,20 +4,16 @@ import time
 from bs4 import BeautifulSoup
 import json
 
+
 class Scraping():
     def __init__(self,hey="wow"):
-
         global last
         last=int(open("last","r").read())
         
         global data
         with open('data.json') as json_file:
              data = json.load(json_file)
-        
-        
-        
-                  
-        for n in range(last ,2000000):
+        for n in range(last ,20000000):
             op=open('last','w')
             op.write(str(n))
             op.close()
