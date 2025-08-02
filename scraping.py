@@ -9,11 +9,14 @@ class Scraping():
     def __init__(self,hey="wow"):
         global last
         last=int(open("last","r").read())
+        print(last)
         
         global data
         with open('data.json') as json_file:
              data = json.load(json_file)
-        for n in range(last ,20000000):
+        n=last
+        while True == True:
+             
             op=open('last','w')
             op.write(str(n))
             op.close()
@@ -28,6 +31,7 @@ class Scraping():
             r=requests.get("https://stackoverflow.com/questions/"+str(n))
             soup=BeautifulSoup(r.content, 'html.parser')
             l=soup.find_all("title")
+            print(l)
             m=soup.find_all("div", {"class": "s-prose js-post-body"})
             title=l[0].text
             if m==[]:
@@ -46,4 +50,6 @@ class Scraping():
                       
             
             time.sleep(5)
+            n+=1
 
+s=Scraping()
