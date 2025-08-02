@@ -1,0 +1,90 @@
+<!doctype html>
+<title>open hands</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Editor</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    #mydiv {
+      font-family: Arial, sans-serif;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    .hey {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-shrink:0;
+      flex:0 0 100%;
+      width:100%;
+      gap: 0px;
+      padding: 20px;
+    }
+    textarea {
+      width: 50%;
+      height: 90vh;
+      font-family: monospace;
+      font-size: 16px;
+      padding: 10px;
+    }
+    #preview {
+      width: 50%;
+      height: 90vh;
+      overflow-y: auto;
+      border-left: 1px solid #ccc;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    h1, h2, h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+<div class="hey">code less, make more : 
+
+- **code less , make more** : Les agents openhands peuvent accomplir tout ce qu'un développeur humain peut faire : 
+* <a href="/editcode">modifier du code</a>, 
+* <a href="/executecommande">exécuter des commandes</a>, 
+* <a href="/navigateweb">naviguer sur le web</a>, 
+- <a href="/callapis">appeler des API</a>, 
+- <a href="/copycode">et oui - même copier des extraits de code depuis StackOverflow</a>
+</div>
+<br class="hey">
+<hr class="hey">
+<div id="mydiv">
+  <textarea id="markdown" oninput="updatePreview()">
+# Welcome to the Markdown Editor!
+
+Type your Markdown on the left, and see the preview on the right.
+
+## Features
+- Live preview
+- GitHub-flavored Markdown
+- Easy to customize
+
+**Enjoy writing!**
+  </textarea>
+
+  <div id="preview"></div>
+</div>
+
+
+  <script>
+    function updatePreview() {
+      const markdownText = document.getElementById("markdown").value;
+      document.getElementById("preview").innerHTML = marked.parse(markdownText);
+    }
+
+    // Initial render
+    updatePreview();
+  </script>
+</body>
+</html>
+
+
+{% if person %}
+  <h1>Hello {{ person }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}

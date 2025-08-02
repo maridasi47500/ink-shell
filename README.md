@@ -70,3 +70,6 @@ Start by choosing your direction:  Frontend (HTML) or Backend (Python/Ruby).
 -  ce n’est pas pour faire llm from scratch , ou commencer un nouveau voyage depuis zéro.  Tu es pas un developpeur du début, 
 
 - **code less , make more** : Les agents openhands peuvent accomplir tout ce qu'un développeur humain peut faire : modifier du code, exécuter des commandes, naviguer sur le web, appeler des API, et oui - même copier des extraits de code depuis StackOverflow.
+- flask --app . init-db
+- flask --app . run
+
