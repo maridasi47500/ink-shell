@@ -67,3 +67,4 @@ readline.write_history_file('python_history.txt')
 🧭 README Focus
 
 Start by choosing your direction:  Frontend (HTML) or Backend (Python/Ruby).
+-  ce n’est pas pour faire llm from scratch , ou commencer un nouveau voyage depuis zéro.  Tu es pas un developpeur du début, 
