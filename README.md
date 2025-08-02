@@ -58,3 +58,12 @@ Kernel.at_exit {
 import readline
 readline.write_history_file('python_history.txt')
 ````
+🧩 Notes & Tips
+
+    When writing content: → Start your keywords in the title, end them in the body. → Replace shapes (square, circle, triangle) with emojis of your choice.
+
+    For data logging: → Fill your table once per GPS position, datetime, and full dataset.
+
+🧭 README Focus
+
+Start by choosing your direction:  Frontend (HTML) or Backend (Python/Ruby).
