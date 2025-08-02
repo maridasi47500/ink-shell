@@ -1,6 +1,6 @@
-InkShell — Markdown Meets REPL
+# InkShell — Markdown Meets REPL
 
-InkShell is a browser-based Markdown editor with REPL-style code simulation and file-saving capabilities. It’s designed for developers who want to write documentation, test code snippets, and kickstart their projects—all in one elegant interface.
+* InkShell is a browser-based Markdown editor with REPL-style code simulation and file-saving capabilities. It’s designed for developers who want to write documentation, test code snippets, and kickstart their projects—all in one elegant interface.
 ✨ Features
 
     📝 Live Markdown Editor — Write and preview Markdown in real time
@@ -68,3 +68,5 @@ readline.write_history_file('python_history.txt')
 
 Start by choosing your direction:  Frontend (HTML) or Backend (Python/Ruby).
 -  ce n’est pas pour faire llm from scratch , ou commencer un nouveau voyage depuis zéro.  Tu es pas un developpeur du début, 
+
+- **code less , make more** : Les agents openhands peuvent accomplir tout ce qu'un développeur humain peut faire : modifier du code, exécuter des commandes, naviguer sur le web, appeler des API, et oui - même copier des extraits de code depuis StackOverflow.
