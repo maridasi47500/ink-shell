@@ -1,0 +1,11 @@
+<form method="post">
+<textarea name="name" style="width:100%;height:200px;">
+import requests
+response = requests.get("http://api.open-notify.org/astros") 
+print(response.status_code)
+
+
+</textarea>
+<input type="submit" value="call an api"/>
+</form>
+
