@@ -1,5 +1,6 @@
 from flask import request, Flask, render_template
 from webbrowser import open as surfweb
+from questionscrape import ScrapeSomething
 
 app = Flask(__name__)
 def do_the_login(name):
@@ -14,7 +15,9 @@ def hello(name=None):
 @app.route('/copycode', methods=['GET', 'POST'])
 def copycode(name=None):
     if request.method == 'POST':
-        return do_the_login(name)
+        g=ScrapeSomething(name) #english
+        o=g.questions_answers(1,5)
+        g.mylinks()
     else:
         return render_template('copycode.html')
 
