@@ -27,13 +27,13 @@ Storage	SQLite / FileSystem	Store markdown content and history
 
 
  * comment vas t-u
-bash```
+````
 sudo apt install markdown discount
 vi README.md #write something
 mkd2html "README.md" "readme"
 
 
-```
+````
 * do
 ````
 sudo apt install markdown discount
