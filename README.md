@@ -73,3 +73,4 @@ Start by choosing your direction:  Frontend (HTML) or Backend (Python/Ruby).
 - flask --app . init-db
 - flask --app . run
 
+![alt text](code1.png) 
