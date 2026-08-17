@@ -1,10 +1,10 @@
-<!doctype html>
-<title>open hands</title>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Markdown Editor</title>
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvenue dans business info
+{% endblock %}
+{% block content %}
+
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     #mydiv {
@@ -39,8 +39,6 @@
     }
     h1, h2, h3 { margin-top: 0; }
   </style>
-</head>
-<body>
 <div class="hey">code less, make more : 
 
 - **code less , make more** : Les agents openhands peuvent accomplir tout ce qu'un développeur humain peut faire : 
@@ -79,8 +77,6 @@ Type your Markdown on the left, and see the preview on the right.
     // Initial render
     updatePreview();
   </script>
-</body>
-</html>
 
 
 {% if person %}
@@ -88,3 +84,4 @@ Type your Markdown on the left, and see the preview on the right.
 {% else %}
   <h1>Hello, World!</h1>
 {% endif %}
+{% endblock %}

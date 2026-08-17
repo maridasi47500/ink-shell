@@ -1,3 +1,9 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvenue dans business info
+{% endblock %}
+{% block content %}
 
 <form method="post">
 <textarea name="name" style="width:100%;height:200px;">
@@ -14,3 +20,4 @@ grep -r -i "from . import db"
 </textarea>
 <input type="submit" value="execute the code"/>
 </form>
+{% endblock %}
